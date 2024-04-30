@@ -1,0 +1,194 @@
+.section {
+    position: relative;
+    background-color: white;
+    height: fit-content;
+    width: 560px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    --md-elevation-level: 1;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: lightblue;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: lightblue;
+    border-radius: 20px;
+    border: 3px solid aliceblue;
+  }
+.expanded {
+    gap: 20px;
+    --md-elevation-level: 2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+}
+
+.name-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.subhead {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.icon {
+    background-color: lightblue;
+    height: 44px;
+    width: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expand {
+    position: relative;
+    cursor: pointer;
+}
+
+.expand::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    opacity: 0;
+    border-radius: 500px;
+}
+
+.expand:hover::before {
+    opacity: 0.08;
+}
+
+.form-work,
+.form-education {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 16px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 240px;
+}
+
+textarea {
+    padding: 12px;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    border: none;
+    padding: 14px;
+    width: 110px;
+    border-radius: 5000px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+button {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.submit {
+    background-color: lightblue;
+}
+
+.edit {
+    border: 1px solid #9f9f9f;
+    background-color: transparent;
+}
+
+.fonts {
+    display: flex;
+    gap: 16px;
+}
+
+.font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.font-icon {
+    background-color: lightblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 45px;
+    overflow: clip;
+}
+.selected{
+    border: 3px solid;
+}

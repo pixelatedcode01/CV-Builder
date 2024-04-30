@@ -1,0 +1,84 @@
+.main-page {
+    background-color: white;
+    height: 842px;
+    width: 595px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 4px;
+    position: relative;
+    --md-elevation-level:2;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.general-info {
+    display: flex;
+    gap: 12px;
+}
+
+.border-bottom {
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.heading-main {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.subheading {
+    font-style: italic;
+}
+
+.first {
+    flex-direction: column;
+    display: flex;
+}
+
+.content {
+    font-weight: 400;
+}
+
+.long-line {
+    flex: initial;
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+.certificates{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.certificates > p::before{
+    content: '• ';
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.download-button{
+    align-self: flex-end;
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 5000px;
+    cursor: pointer;
+}

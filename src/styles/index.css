@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter Tight, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: aliceblue;
+  height: 100svh;
+  display: flex;
+}
+
+.container>div {
+  flex: 1;
+  /* border: 1px solid; */
+  display: flex;
+}
+
+.sections {
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+}
+
+.page {
+
+  align-items: center;
+  justify-content: center;
+}
